@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+<form id="studentForm">
+    <fieldset>
+
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+
+        <legend>Gender</legend>
+        <input type="radio" name="Gender" value="male">Male<br>
+        <input type="radio" name="Gender" value="female">Female<br>
+        <input type="radio" name="Gender" value="other">Other<br>
+
+    </fieldset>
+    <br>
+    <fieldset>
+
+        <legend>Skills</legend>
+        <div class="input group">
+        <input type="checkbox" id="html" name="skill">
+        <label for="html">HTML</label>
+        </div>
+         <div class="input group">
+        <input type="checkbox" id="css" name="skill">
+        <label for="css">CSS</label>
+        </div>
+         <div class="input group">
+        <input type="checkbox" id="javascript" name="skill">
+        <label for="js">JavaScript</label>
+        </div>
+         <div class="input group">
+        <input type="checkbox" id="python" name="skill">
+        <label for="python">Python</label>
+        </div>
+         <div class="input group">
+        <input type="checkbox" id="java" name="skill">
+        <label for="java">JAVA</label>
+        </div>
+         <div class="input group">
+        <input type="checkbox" id="c" name="skill">
+        <label for="c">C</label>
+        </div>
+       <div class="input group">
+        <input type="checkbox" id="c++" name="skill">
+        <label for="c++">C++</label>
+        </div>
+         <div class="input group">
+        <input type="checkbox" id="c#" name="skill">
+        <label for="c#">C#</label>
+        </div>
+
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+
+        <legend>Course Selection</legend>
+        <label for="Course">Choose a course:</label><br>
+
+        <select id="course" name="course">
+            <option value="">--Select Course--</option>
+            <option>Computer Systems Engineering</option>
+            <option>Chemical Engineering</option>
+            <option>Software Engineering</option>
+            <option>Biomedical Engineering</option>
+            <option>Bachelor of Medicine</option>
+            <option>Data Science</option>
+            <option>Computer Science</option>
+        </select>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Message</legend>
+        <label for="Message">Additional Comments:</label><br>
+        <textarea id="Message" rows="8" cols="67"></textarea>
+    </fieldset>
+    <br>
+
+    <button type="submit">Submit Form</button>
+    <button type="reset">Clear Form</button>
+
+
+      </form>
+      <script src"script.js"></script>
+   </body>
+</html>
